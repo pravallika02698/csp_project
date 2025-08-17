@@ -1,0 +1,42 @@
+name: health_hygiene_emergency_new
+description: A Health & Hygiene Emergency app
+version: 1.0.0+1
+publish_to: 'none'
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # SMS & Telephony
+  telephony: ^0.2.0
+  flutter_sms:
+    git:
+      url: https://github.com/abelf/fSMS.git
+      ref: main
+
+  # Location
+  geolocator: ^8.2.0
+
+  # Text to Speech and Speech to Text
+  flutter_tts: ^4.2.3
+  speech_to_text: ^7.3.0
+
+  # Storage
+  shared_preferences: ^2.1.1
+
+  # URL Launcher
+  url_launcher: ^6.1.10
+
+  # Permissions
+  permission_handler: ^10.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
